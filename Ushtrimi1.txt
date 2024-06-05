@@ -1,0 +1,16 @@
+def reverseLookup(data,value):
+  keys=[]
+  for key in data:
+    if data[key]==value:
+      keys.append(key)
+  return keys
+
+def main():
+  FrEn={"le":"the","la":"the","livre":"book","pomme":"apple"}
+  print("The french word for 'the' are: ",reverseLookup(FrEn,"the"))
+  print("Expected:['le','la']")
+  print()
+  print("The french word for 'apple' is: ",reverseLookup(FrEn,"apple"))
+  print("Expected: ['pomme']")
+  print()
+  
